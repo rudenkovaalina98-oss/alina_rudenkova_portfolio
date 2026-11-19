@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en">
+
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Alina Rudenkova — Portfolio</title>
-<meta name="description" content="Alina Rudenkova — Onboarding Operations &amp; L&amp;D Specialist. Instructional design, e-learning development, onboarding process automation (Google Apps Script, Zapier), AI chat simulations (Gemini API, prompt engineering), technical specifications. Remote, Ukraine.">
-<meta name="keywords" content="Onboarding Operations, Learning and Development, L&amp;D, Instructional Design, E-learning, LMS Administration, Process Automation, Google Apps Script, Zapier, Prompt Engineering, Gemini API, AI Simulations, Technical Specifications, Onboarding Metrics, Remote">
+<meta content="Alina Rudenkova — Onboarding Operations &amp; L&amp;D Specialist. Instructional design, e-learning development, onboarding process automation (Google Apps Script, Zapier), AI chat simulations (Gemini API, prompt engineering), technical specifications. Remote, Ukraine." name="description"/>
+<meta content="Onboarding Operations, Learning and Development, L&amp;D, Instructional Design, E-learning, LMS Administration, Process Automation, Google Apps Script, Zapier, Prompt Engineering, Gemini API, AI Simulations, Technical Specifications, Onboarding Metrics, Remote" name="keywords"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Alina Rudenkova","jobTitle":"Onboarding Operations & L&D Specialist","email":"mailto:rudenkovaalina98@gmail.com","address":{"@type":"PostalAddress","addressCountry":"UA"},"knowsLanguage":["uk","en"],"knowsAbout":["Onboarding Operations","Instructional Design","E-learning Development","Learning Journey Design","LMS Administration","Readiness Assessment","Process Automation","Google Apps Script","Google Sheets","Zapier","Prompt Engineering","Gemini API","AI Chat Simulations","Technical Specifications","Clickable Prototypes","Onboarding Metrics","Figma","Notion"],"alumniOf":{"@type":"CollegeOrUniversity","name":"Kherson State University"}}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;family=Rubik:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
 /* Layout idea: bento grid — pastel tiles of different sizes; each fact lives in its own tile, case studies open with a coloured label tile. */
 :root{
@@ -45,8 +46,6 @@
 *{box-sizing:border-box}
 html,body{margin:0}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
-[data-lang="en"] .uk{display:none !important}
-[data-lang="uk"] .en{display:none !important}
 a{color:inherit}
 a:focus-visible,button:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:10px}
 h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;line-height:1.08}
@@ -70,9 +69,6 @@ p{margin:0}
 .bar nav{display:flex;gap:6px;font-size:14px;font-weight:500;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px}
 .bar nav a{color:var(--ink);text-decoration:none;padding:6px 12px;border-radius:999px}
 .bar nav a:hover{background:var(--bg)}
-.lang{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px}
-.lang button{font:600 12.5px var(--body);border:0;background:transparent;color:var(--ink);padding:6px 12px;border-radius:999px;cursor:pointer}
-.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 .tools{display:flex;align-items:center;gap:8px}
 .theme-btn{width:40px;height:40px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);display:grid;place-items:center;cursor:pointer}
 .theme-btn:hover{background:var(--lav);color:var(--lav-ink);border-color:transparent}
@@ -99,7 +95,7 @@ p{margin:0}
 .c-dark .btn.primary{background:var(--lav);border-color:var(--lav);color:var(--lav-ink)}
 .stat{display:flex;flex-direction:column;justify-content:space-between;gap:16px;min-height:180px}
 .stat b{font-family:var(--display);font-weight:400;font-size:clamp(36px,4vw,52px);line-height:1;font-variant-numeric:tabular-nums}
-.stat span{font-size:14.5px;line-height:1.4;font-weight:500}
+.stat{font-size:14.5px;line-height:1.4;font-weight:500}
 .t-contact .lines{display:grid;gap:2px;font-size:15px}
 .t-contact .lines strong{font-size:17px}
 .t-contact .lbl{font-size:13px;opacity:.7}
@@ -223,7 +219,7 @@ footer .btn.primary{background:var(--lav);border-color:var(--lav);color:var(--la
   .role{font-size:11pt}
   .stat{min-height:0;gap:8px}
   .stat b{font-size:22pt}
-  .stat span{font-size:8.5pt}
+  .stat{font-size:8.5pt}
   section{padding:18px 0 4px}
   .sec-head{margin-bottom:10px;break-after:avoid}
   .sec-head h2,.about h2{font-size:20pt}
@@ -267,419 +263,380 @@ footer .btn.primary{background:var(--lav);border-color:var(--lav);color:var(--la
 </style>
 </head>
 <body>
-
 <header class="bar">
-  <div class="wrap">
-    <a class="mark" href="#top"><i>AR</i>Alina Rudenkova</a>
-    <nav aria-label="Sections">
-      <a href="#about"><span class="en">About</span><span class="uk">Про мене</span></a>
-      <a href="#cases"><span class="en">Case studies</span><span class="uk">Кейси</span></a>
-      <a href="#skills"><span class="en">Skills</span><span class="uk">Навички</span></a>
-      <a href="#experience"><span class="en">Experience</span><span class="uk">Досвід</span></a>
-      <a href="#contact"><span class="en">Contact</span><span class="uk">Контакти</span></a>
-    </nav>
-    <div class="tools">
-    <button id="theme-btn" class="theme-btn" type="button" aria-label="Switch to dark theme" title="Switch theme">
-      <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-      <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-    </button>
-    <div class="lang" role="group" aria-label="Language">
-      <button id="btn-en" type="button" aria-pressed="true" data-set="en">EN</button>
-      <button id="btn-uk" type="button" aria-pressed="false" data-set="uk">UA</button>
-    </div>
-    </div>
-  </div>
+<div class="wrap">
+<a class="mark" href="#top"><i>AR</i>Alina Rudenkova</a>
+<nav aria-label="Sections">
+<a href="#about">About</a>
+<a href="#cases">Case studies</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="tools">
+<button aria-label="Switch to dark theme" class="theme-btn" id="theme-btn" title="Switch theme" type="button">
+<svg aria-hidden="true" class="i-moon" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+<svg aria-hidden="true" class="i-sun" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+</button>
+
+</div>
+</div>
 </header>
-
 <main class="wrap" id="top">
+<!-- HERO -->
+<div class="bento">
+<div class="t t-name c-lav">
+<span class="pill">Open to work · Remote</span>
+<h1>Alina<br/>Rudenkova</h1>
+</div>
+<div class="t t-role">
+<p class="role">
+Onboarding Operations &amp; L&amp;D Specialist. I turn messy onboarding into <span class="hl">systems that run themselves</span>: interactive courses, AI chat simulations, automations and specs developers can ship.
 
-  <!-- HERO -->
-  <div class="bento">
-    <div class="t t-name c-lav">
-      <span class="pill"><span class="en">Open to work · Remote</span><span class="uk">Відкрита до пропозицій · Remote</span></span>
-      <h1>Alina<br>Rudenkova</h1>
-    </div>
-    <div class="t t-role">
-      <p class="role">
-        <span class="en">Onboarding Operations &amp; L&amp;D Specialist. I turn messy onboarding into <span class="hl">systems that run themselves</span>: interactive courses, AI chat simulations, automations and specs developers can ship.</span>
-        <span class="uk">Onboarding Operations &amp; L&amp;D спеціалістка. Перетворюю хаотичний онбординг на <span class="hl">системи, що працюють самі</span>: інтерактивні курси, AI-симуляції, автоматизації та ТЗ, які розробники одразу беруть у роботу.</span>
-      </p>
-      <div class="cta">
-        <button class="btn primary" type="button" data-copy="rudenkovaalina98@gmail.com"><span class="en">Copy email</span><span class="uk">Скопіювати email</span></button>
-        <a class="btn" href="#cases"><span class="en">See case studies ↓</span><span class="uk">Дивитися кейси ↓</span></a>
-      </div>
-    </div>
-    <div class="t stat c-mint"><b>−80%</b><span class="en">manual work per onboarding cohort (15 h → ~40 min)</span><span class="uk">ручної роботи на когорту онбордингу (15 год → ~40 хв)</span></div>
-    <div class="t stat c-peach"><b>8+</b><span class="en">interactive e-learning courses, UA and EN</span><span class="uk">інтерактивних e-learning курсів, UA та EN</span></div>
-    <div class="t stat c-butter"><b>35–45</b><span class="en">new specialists trained per month at peak hiring</span><span class="uk">нових спеціалістів на місяць у пік найму</span></div>
-    <div class="t stat c-sky"><b>5 → 1</b><span class="en">tools consolidated into one onboarding platform</span><span class="uk">інструментів об'єднано в одну платформу</span></div>
-    <div class="t t-contact c-dark">
-      <span class="lbl"><span class="en">Contact · Ukraine · English B2</span><span class="uk">Контакти · Україна · English B2</span></span>
-      <div class="lines"><strong>rudenkovaalina98@gmail.com</strong></div>
-    </div>
-  </div>
+</p>
+<div class="cta">
+<button class="btn primary" data-copy="rudenkovaalina98@gmail.com" type="button">Copy email</button>
+<a class="btn" href="#cases">See case studies ↓</a>
+</div>
+</div>
+<div class="t stat c-mint"><b>−80%</b>manual work per onboarding cohort (15 h → ~40 min)</div>
+<div class="t stat c-peach"><b>8+</b>interactive e-learning courses, UA and EN</div>
+<div class="t stat c-butter"><b>35–45</b>new specialists trained per month at peak hiring</div>
+<div class="t stat c-sky"><b>5 → 1</b>tools consolidated into one onboarding platform</div>
+<div class="t t-contact c-dark">
+<span class="lbl">Contact · Ukraine · English B2</span>
+<div class="lines"><strong>rudenkovaalina98@gmail.com</strong></div>
+</div>
+</div>
+<!-- ABOUT -->
+<section id="about">
+<div class="about">
+<h2>About</h2>
+<div class="text">
+<p>From July 2025 to November 2026 I worked at an international B2C tech product company whose platform connects users with remote specialists for chat and audio consultations. I started on the front line, chatting with users directly, then moved to designing training, and finally ran the whole onboarding stage: from a candidate leaving the hiring funnel to their activation on the platform.</p>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="about">
-      <h2><span class="en">About</span><span class="uk">Про мене</span></h2>
-      <div class="text">
-        <p class="en">From July 2025 to November 2026 I worked at an international B2C tech product company: a marketplace of remote specialists who consult users in chat and audio. I started on the front line, chatting with users directly, then moved to designing training, and finally ran the whole onboarding stage: from a candidate leaving the hiring funnel to their activation on the platform.</p>
-        <p class="uk">З липня 2025 до листопада 2026 я працювала в міжнародній B2C продуктовій IT-компанії — маркетплейсі віддалених спеціалістів, які консультують користувачів у чатах та аудіо. Почала з першої лінії, напряму спілкуючись з користувачами, потім перейшла до розробки навчання, а згодом вела весь етап онбордингу: від виходу кандидата з воронки найму до його активації на платформі.</p>
-        <p class="en">My strength is the space between L&amp;D, operations and product. I design the learning content, automate the routine around it, and write the specs and prototypes that turn a manual process into a platform feature. I build with AI-assisted development (Claude, ChatGPT, Gemini) and write my own system and evaluator prompts.</p>
-        <p class="uk">Моя сильна сторона — перетин L&amp;D, операційки та продукту. Я створюю навчальний контент, автоматизую рутину навколо нього і пишу ТЗ та прототипи, які перетворюють ручний процес на функцію платформи. Розробляю з AI-асистентами (Claude, ChatGPT, Gemini) і сама пишу системні та оцінювальні промпти.</p>
-        <div class="principles">
-          <div class="principle">
-            <h3><span class="en">Start from the real workflow</span><span class="uk">Від реального процесу</span></h3>
-            <p><span class="en">Front-line experience with users shapes every course, persona and checklist I design.</span><span class="uk">Досвід першої лінії з користувачами лежить в основі кожного курсу, персони та чекліста.</span></p>
-          </div>
-          <div class="principle">
-            <h3><span class="en">Prototype before spec</span><span class="uk">Спершу прототип</span></h3>
-            <p><span class="en">A clickable HTML prototype aligns stakeholders and developers faster than a long document.</span><span class="uk">Клікабельний HTML-прототип швидше узгоджує вимоги з розробниками, ніж довгий документ.</span></p>
-          </div>
-          <div class="principle">
-            <h3><span class="en">Automate the routine</span><span class="uk">Рутину — в автоматизацію</span></h3>
-            <p><span class="en">People should review only edge cases; everything predictable runs by rules.</span><span class="uk">Людина переглядає лише прикордонні випадки, все передбачуване працює за правилами.</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<p>My strength is the space between L&amp;D, operations and product. I design the learning content, automate the routine around it, and write the specs and prototypes that turn a manual process into a platform feature. I build with AI-assisted development (Claude, ChatGPT, Gemini) and write my own system and evaluator prompts.</p>
 
-  <!-- CASES -->
-  <section id="cases">
-    <div class="sec-head">
-      <h2><span class="en">Case studies</span><span class="uk">Кейси</span></h2>
-      <p><span class="en">Selected projects, 2025–2026. Internal data and prompts are generalized; walkthroughs and samples are available on request.</span><span class="uk">Вибрані проєкти, 2025–2026. Внутрішні дані та промпти узагальнено; демо й приклади можу показати на співбесіді.</span></p>
-    </div>
+<div class="principles">
+<div class="principle">
+<h3>Start from the real workflow</h3>
+<p>Front-line experience with users shapes every course, persona and checklist I design.</p>
+</div>
+<div class="principle">
+<h3>Prototype before spec</h3>
+<p>A clickable HTML prototype aligns stakeholders and developers faster than a long document.</p>
+</div>
+<div class="principle">
+<h3>Automate the routine</h3>
+<p>People should review only edge cases; everything predictable runs by rules.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CASES -->
+<section id="cases">
+<div class="sec-head">
+<h2>Case studies</h2>
+<p>Selected projects, 2025–2026. Internal data and prompts are generalized; walkthroughs and samples are available on request.</p>
+</div>
+<div class="cases">
+<!-- 1 -->
+<article class="case">
+<div class="meta">
+<div class="num">01</div>
+<div class="area">Process automation</div>
+<div class="tags"><span class="tag">Google Apps Script</span><span class="tag">Google Sheets</span><span class="tag">Google Forms</span><span class="tag">Workspace Admin</span><span class="tag">ATS</span></div>
+</div>
+<div class="body">
+<h3>Onboarding automation suite</h3>
+<p class="lede">Nine automations that took a cohort's admin work from a full day and more to under an hour.</p>
+<div class="pbr">
+<div>
+<h4>Problem</h4>
+<ul><li>Candidate data copied by hand from the ATS into several sheets</li><li>Separate spreadsheets per audience, duplicates, inconsistent formats</li><li>Accounts, welcome emails and access requests handled one by one</li></ul>
 
-    <div class="cases">
+</div>
+<div>
+<h4>What I built</h4>
+<ul><li>ATS → database import with parsing of recruiter comments</li><li>One source-of-truth database: deduplication, standard data format</li><li>Google Forms sync; activation sync across 4 operational sheets</li><li>Bulk corporate-account files for Workspace Admin</li><li>Welcome email flow, self-service access requests, triggered notifications</li></ul>
 
-      <!-- 1 -->
-      <article class="case">
-        <div class="meta">
-          <div class="num">01</div>
-          <div class="area"><span class="en">Process automation</span><span class="uk">Автоматизація процесів</span></div>
-          <div class="tags"><span class="tag">Google Apps Script</span><span class="tag">Google Sheets</span><span class="tag">Google Forms</span><span class="tag">Workspace Admin</span><span class="tag">ATS</span></div>
-        </div>
-        <div class="body">
-          <h3><span class="en">Onboarding automation suite</span><span class="uk">Набір автоматизацій онбордингу</span></h3>
-          <p class="lede"><span class="en">Nine automations that took a cohort's admin work from a full day and more to under an hour.</span><span class="uk">Дев'ять автоматизацій, які скоротили адмін-роботу на когорту з повного робочого дня до менш ніж години.</span></p>
-          <div class="pbr">
-            <div>
-              <h4><span class="en">Problem</span><span class="uk">Проблема</span></h4>
-              <ul class="en"><li>Candidate data copied by hand from the ATS into several sheets</li><li>Separate spreadsheets per audience, duplicates, inconsistent formats</li><li>Accounts, welcome emails and access requests handled one by one</li></ul>
-              <ul class="uk"><li>Дані кандидатів вручну переносились з ATS у кілька таблиць</li><li>Окремі таблиці для кожної аудиторії, дублі, різні формати</li><li>Акаунти, welcome-листи й запити на доступ — поштучно</li></ul>
-            </div>
-            <div>
-              <h4><span class="en">What I built</span><span class="uk">Що зробила</span></h4>
-              <ul class="en"><li>ATS → database import with parsing of recruiter comments</li><li>One source-of-truth database: deduplication, standard data format</li><li>Google Forms sync; activation sync across 4 operational sheets</li><li>Bulk corporate-account files for Workspace Admin</li><li>Welcome email flow, self-service access requests, triggered notifications</li></ul>
-              <ul class="uk"><li>Імпорт з ATS у базу з парсингом коментарів рекрутерів</li><li>Єдина база як джерело правди: дедуплікація, стандартний формат даних</li><li>Синхронізація Google Forms; синк активацій між 4 операційними таблицями</li><li>Масове створення корпоративних акаунтів для Workspace Admin</li><li>Welcome-ланцюжок листів, self-service запити на доступ, тригерні сповіщення</li></ul>
-            </div>
-            <div>
-              <h4><span class="en">Result</span><span class="uk">Результат</span></h4>
-              <ul class="en"><li>Manual work per cohort: up to 15 h → ~40 min</li><li>Fewer copy-paste errors and one place to look up a newcomer</li><li>Each automation logged in the company's Ops AI tools database</li></ul>
-              <ul class="uk"><li>Ручна робота на когорту: до 15 год → ~40 хв</li><li>Менше помилок копіювання, одне місце для пошуку новачка</li><li>Кожна автоматизація задокументована в базі AI-інструментів Ops</li></ul>
-            </div>
-          </div>
-          <div class="ba" aria-label="Manual work per cohort">
-            <div class="ba-row"><span class="en">Before</span><span class="uk">До</span><div class="ba-track"><div class="ba-fill" style="width:100%;background:var(--warm)"></div></div><b><span class="en">15 h</span><span class="uk">15 год</span></b></div>
-            <div class="ba-row"><span class="en">After</span><span class="uk">Після</span><div class="ba-track"><div class="ba-fill" style="width:4.4%;background:var(--good)"></div></div><b><span class="en">~40 min</span><span class="uk">~40 хв</span></b></div>
-          </div>
-        </div>
-      </article>
+</div>
+<div>
+<h4>Result</h4>
+<ul><li>Manual work per cohort: up to 15 h → ~40 min</li><li>Fewer copy-paste errors and one place to look up a newcomer</li><li>Each automation logged in the company's Ops AI tools database</li></ul>
 
-      <!-- 2 -->
-      <article class="case">
-        <div class="meta">
-          <div class="num">02</div>
-          <div class="area"><span class="en">AI · Training</span><span class="uk">AI · Навчання</span></div>
-          <div class="tags"><span class="tag">Gemini API</span><span class="tag">Cloudflare Workers</span><span class="tag">Prompt engineering</span><span class="tag">Zapier</span><span class="tag">HTML/JS</span></div>
-        </div>
-        <div class="body">
-          <h3><span class="en">AI chat simulations: from one bot to a multi-scenario trainer</span><span class="uk">AI-симуляції чатів: від одного бота до мультисценарного тренажера</span></h3>
-          <p class="lede"><span class="en">I led the move from a single Zapier simulation to a flexible HTML + Gemini API format that could hold many client personas. The idea and groundwork were later built into the new platform as a multi-scenario training tool.</span><span class="uk">Ініціювала перехід від єдиної симуляції на Zapier до гнучкого формату HTML + Gemini API з багатьма персонами клієнтів. Ідею та напрацювання згодом вбудували в нову платформу як мультисценарний тренажер.</span></p>
-          <div class="pbr">
-            <div>
-              <h4><span class="en">Problem</span><span class="uk">Проблема</span></h4>
-              <ul class="en"><li>One existing Zapier simulation was hard to embed in the LMS</li><li>It couldn't scale to many personas for different training goals</li></ul>
-              <ul class="uk"><li>Наявну симуляцію на Zapier було незручно вбудовувати в LMS</li><li>Її не можна було розширити на багато персон для різних цілей навчання</li></ul>
-            </div>
-            <div>
-              <h4><span class="en">What I built</span><span class="uk">Що зробила</span></h4>
-              <ul class="en"><li>Interim step: HTML pages with embedded Zapier chatbots</li><li>Main format: HTML chat on the Gemini API via a Cloudflare Worker proxy</li><li>Client personas by behaviour type (sceptic, impatient, aggressive, meaning-seeker…)</li><li>5-criteria scoring rubric and a separate evaluator prompt</li><li>Guardrails: anti-role-reversal, attribution rules, hidden compliance scenarios</li><li>Apps Script export of results to the tracker with pass/fail flags</li><li>API comparison (Gemini, GPT, Claude, Zapier) and a write-up of data/legal risks</li></ul>
-              <ul class="uk"><li>Проміжний етап: HTML-сторінки з вбудованими Zapier-чатботами</li><li>Основний формат: HTML-чат на Gemini API через проксі на Cloudflare Worker</li><li>Персони клієнтів за типом поведінки (скептик, нетерплячий, агресор, шукач сенсу…)</li><li>Рубрика з 5 критеріїв і окремий промпт-оцінювач</li><li>Запобіжники: заборона обміну ролями, правила атрибуції, приховані комплаєнс-сценарії</li><li>Експорт результатів у трекер через Apps Script з позначками pass/fail</li><li>Порівняння API (Gemini, GPT, Claude, Zapier) та опис ризиків роботи з даними</li></ul>
-            </div>
-            <div>
-              <h4><span class="en">Result</span><span class="uk">Результат</span></h4>
-              <ul class="en"><li>Built into the new platform as a multi-scenario training tool</li><li>10 practice and scored sessions per chat type</li><li>Passing the simulations is required to activate a specialist's profile</li></ul>
-              <ul class="uk"><li>Вбудовано в нову платформу як мультисценарний тренажер</li><li>10 практичних і оцінюваних сесій на кожен тип чату</li><li>Проходження симуляцій — умова активації профілю спеціаліста</li></ul>
-            </div>
-          </div>
-        </div>
-      </article>
+</div>
+</div>
+<div aria-label="Manual work per cohort" class="ba">
+<div class="ba-row">Before<div class="ba-track"><div class="ba-fill" style="width:100%;background:var(--warm)"></div></div><b>15 h</b></div>
+<div class="ba-row">After<div class="ba-track"><div class="ba-fill" style="width:4.4%;background:var(--good)"></div></div><b>~40 min</b></div>
+</div>
+</div>
+</article>
+<!-- 2 -->
+<article class="case">
+<div class="meta">
+<div class="num">02</div>
+<div class="area">AI · Training</div>
+<div class="tags"><span class="tag">Gemini API</span><span class="tag">Cloudflare Workers</span><span class="tag">Prompt engineering</span><span class="tag">Zapier</span><span class="tag">HTML/JS</span></div>
+</div>
+<div class="body">
+<h3>AI chat simulations: from one bot to a multi-scenario trainer</h3>
+<p class="lede">I led the move from a single Zapier simulation to a flexible HTML + Gemini API format that could hold many client personas. The idea and groundwork were later built into the new platform as a multi-scenario training tool.</p>
+<div class="pbr">
+<div>
+<h4>Problem</h4>
+<ul><li>One existing Zapier simulation was hard to embed in the LMS</li><li>It couldn't scale to many personas for different training goals</li></ul>
 
-      <!-- 3 -->
-      <article class="case">
-        <div class="meta">
-          <div class="num">03</div>
-          <div class="area"><span class="en">Instructional design</span><span class="uk">Інструкційний дизайн</span></div>
-          <div class="tags"><span class="tag">HTML/CSS/JS</span><span class="tag">LearnUpon</span><span class="tag">Descript</span><span class="tag">Canva</span><span class="tag">UA / EN</span></div>
-        </div>
-        <div class="body">
-          <h3><span class="en">E-learning catalog and LMS migration</span><span class="uk">Каталог курсів і міграція LMS</span></h3>
-          <p class="lede"><span class="en">Interactive courses and guides in two languages, rebuilt in one format when onboarding moved from a third-party LMS to the company's own platform.</span><span class="uk">Інтерактивні курси та гайди двома мовами, перебудовані в єдиний формат під час переходу зі сторонньої LMS на власну платформу компанії.</span></p>
-          <div class="pbr">
-            <div>
-              <h4><span class="en">Problem</span><span class="uk">Проблема</span></h4>
-              <ul class="en"><li>Content scattered across formats and an external LMS</li><li>Ukrainian- and English-speaking audiences needed different programmes</li></ul>
-              <ul class="uk"><li>Контент у різних форматах і в зовнішній LMS</li><li>Україномовній та англомовній аудиторіям потрібні були різні програми</li></ul>
-            </div>
-            <div>
-              <h4><span class="en">What I built</span><span class="uk">Що зробила</span></h4>
-              <ul class="en"><li>8+ interactive HTML courses: client communication, retention, engagement, empathy, audio consultations, platform workflows</li><li>Embedded video, tasks, quizzes and knowledge checks; completion events sent to the platform</li><li>Knowledge base of guides (glossary, schedule and payouts, "how we work")</li><li>Catalog restructure: one format, sequential unlocking, a separate learning journey for each audience</li></ul>
-              <ul class="uk"><li>8+ інтерактивних HTML-курсів: комунікація з клієнтом, утримання, залученість, емпатія, аудіоконсультації, робочі процеси платформи</li><li>Вбудовані відео, завдання, квізи й перевірки знань; події завершення передаються на платформу</li><li>База знань із гайдів (глосарій, графік і виплати, «як ми працюємо»)</li><li>Реструктуризація каталогу: єдиний формат, послідовне відкриття уроків, окремі learning journeys для кожної аудиторії</li></ul>
-            </div>
-            <div>
-              <h4><span class="en">Result</span><span class="uk">Результат</span></h4>
-              <ul class="en"><li>35–45 new specialists per month trained during active hiring</li><li>On the new platform, onboarding ran faster and got better learner feedback</li><li>Same content in UA and EN with matching layouts</li></ul>
-              <ul class="uk"><li>35–45 нових спеціалістів на місяць у період активного найму</li><li>На новій платформі онбординг проходив швидше й отримував кращий фідбек</li><li>Однаковий контент UA та EN з ідентичною структурою</li></ul>
-            </div>
-          </div>
-        </div>
-      </article>
+</div>
+<div>
+<h4>What I built</h4>
+<ul><li>Interim step: HTML pages with embedded Zapier chatbots</li><li>Main format: HTML chat on the Gemini API via a Cloudflare Worker proxy</li><li>Client personas by behaviour type (sceptic, impatient, aggressive, meaning-seeker…)</li><li>5-criteria scoring rubric and a separate evaluator prompt</li><li>Guardrails: anti-role-reversal, attribution rules, hidden compliance scenarios</li><li>Apps Script export of results to the tracker with pass/fail flags</li><li>API comparison (Gemini, GPT, Claude, Zapier) and a write-up of data/legal risks</li></ul>
 
-      <!-- 4 -->
-      <article class="case">
-        <div class="meta">
-          <div class="num">04</div>
-          <div class="area"><span class="en">Product · Specs</span><span class="uk">Продукт · ТЗ</span></div>
-          <div class="tags"><span class="tag">Notion</span><span class="tag">Figma</span><span class="tag">HTML prototypes</span><span class="tag">Jira</span></div>
-        </div>
-        <div class="body">
-          <h3><span class="en">New onboarding platform: specs and prototypes</span><span class="uk">Нова платформа онбордингу: ТЗ і прототипи</span></h3>
-          <p class="lede"><span class="en">Requirements, clickable prototypes and process design for the platform that replaced spreadsheet tracking and five separate tools.</span><span class="uk">Вимоги, клікабельні прототипи й дизайн процесів для платформи, яка замінила трекінг у таблицях та п'ять окремих інструментів.</span></p>
-          <div class="pbr">
-            <div>
-              <h4><span class="en">Problem</span><span class="uk">Проблема</span></h4>
-              <ul class="en"><li>Onboarding ran across LMS, Zapier, Slack, email and Tableau</li><li>Support questions lost in DMs; no single view of a newcomer</li><li>Every failed check needed a manual decision</li></ul>
-              <ul class="uk"><li>Онбординг жив у LMS, Zapier, Slack, пошті й Tableau</li><li>Питання підтримки губились в особистих; не було єдиної картки новачка</li><li>Кожна непройдена перевірка потребувала ручного рішення</li></ul>
-            </div>
-            <div>
-              <h4><span class="en">What I built</span><span class="uk">Що зробила</span></h4>
-              <ul class="en"><li>Dev specs: operations and analytics dashboards (onboarding score, pass rate, time-to-activation, on-time rate, satisfaction)</li><li>Notification system and registration/login flow</li><li>Manual bug-reporting and escalation process for the onboarding stage</li><li>Clickable HTML prototypes and Figma process diagrams to align with developers</li><li>In-platform mentor inbox with automated reminders instead of Slack/email</li><li>Automated readiness-check rules</li></ul>
-              <ul class="uk"><li>ТЗ: операційний та аналітичний дашборди (onboarding score, pass rate, time-to-activation, on-time rate, задоволеність)</li><li>Система сповіщень і флоу реєстрації/входу</li><li>Ручний процес баг-репортів та ескалації на етапі онбордингу</li><li>Клікабельні HTML-прототипи й Figma-схеми процесів для узгодження з розробниками</li><li>Інбокс ментора всередині платформи з автонагадуваннями замість Slack/пошти</li><li>Автоматичні правила перевірки готовності</li></ul>
-            </div>
-            <div>
-              <h4><span class="en">Result</span><span class="uk">Результат</span></h4>
-              <ul class="en"><li>5 tools consolidated into one platform</li><li>Only borderline cases go to manual review</li><li>Developers worked from prototypes, not guesses</li></ul>
-              <ul class="uk"><li>5 інструментів об'єднано в одну платформу</li><li>На ручний розгляд потрапляють лише прикордонні випадки</li><li>Розробка йшла від прототипів, а не від здогадок</li></ul>
-            </div>
-          </div>
-        </div>
-      </article>
+</div>
+<div>
+<h4>Result</h4>
+<ul><li>Built into the new platform as a multi-scenario training tool</li><li>10 practice and scored sessions per chat type</li><li>Passing the simulations is required to activate a specialist's profile</li></ul>
 
-      <!-- 5 -->
-      <article class="case">
-        <div class="meta">
-          <div class="num">05</div>
-          <div class="area"><span class="en">AI · Concept</span><span class="uk">AI · Концепт</span></div>
-          <div class="tags"><span class="tag">LLM</span><span class="tag">Vision model</span><span class="tag">HTML prototype</span></div>
-        </div>
-        <div class="body">
-          <h3><span class="en">AI Copilot for profile review (concept)</span><span class="uk">AI Copilot для перевірки профілів (концепт)</span></h3>
-          <p class="lede"><span class="en">An idea for an admin-panel assistant that checks new specialists' profiles against the creation guidelines. I prepared the concept and a clickable prototype; development didn't start for lack of time.</span><span class="uk">Ідея асистента в адмін-панелі, який перевіряє профілі нових спеціалістів на відповідність гайдлайнам. Я підготувала концепт і клікабельний прототип; до розробки не дійшло через брак часу.</span></p>
-          <div class="pbr">
-            <div>
-              <h4><span class="en">Problem</span><span class="uk">Проблема</span></h4>
-              <ul class="en"><li>Profiles reviewed by hand against a long guide</li><li>Same issues flagged again and again</li></ul>
-              <ul class="uk"><li>Профілі перевірялись вручну за довгим гайдом</li><li>Ті самі помилки знаходили знову й знову</li></ul>
-            </div>
-            <div>
-              <h4><span class="en">What I proposed</span><span class="uk">Що запропонувала</span></h4>
-              <ul class="en"><li>Concept: checks, data sources, manager workflow</li><li>Clickable prototype showing flagged fields and suggested fixes</li><li>Photo and video checks via a vision model</li></ul>
-              <ul class="uk"><li>Концепт: перевірки, джерела даних, процес менеджера</li><li>Клікабельний прототип із підсвіченими полями та пропозиціями виправлень</li><li>Перевірка фото й відео через vision-модель</li></ul>
-            </div>
-            <div>
-              <h4><span class="en">Status</span><span class="uk">Статус</span></h4>
-              <ul class="en"><li>Idea and prototype only; not implemented</li></ul>
-              <ul class="uk"><li>Ідея та прототип; не реалізовано</li></ul>
-            </div>
-          </div>
-        </div>
-      </article>
+</div>
+</div>
+</div>
+</article>
+<!-- 3 -->
+<article class="case">
+<div class="meta">
+<div class="num">03</div>
+<div class="area">Instructional design</div>
+<div class="tags"><span class="tag">HTML/CSS/JS</span><span class="tag">LearnUpon</span><span class="tag">Descript</span><span class="tag">Canva</span><span class="tag">UA / EN</span></div>
+</div>
+<div class="body">
+<h3>E-learning catalog and LMS migration</h3>
+<p class="lede">Interactive courses and guides in two languages, rebuilt in one format when onboarding moved from a third-party LMS to the company's own platform.</p>
+<div class="pbr">
+<div>
+<h4>Problem</h4>
+<ul><li>Content scattered across formats and an external LMS</li><li>Ukrainian- and English-speaking audiences needed different programmes</li></ul>
 
-      <!-- 6 -->
-      <article class="case">
-        <div class="meta">
-          <div class="num">06</div>
-          <div class="area"><span class="en">Data · Reporting</span><span class="uk">Дані · Звітність</span></div>
-          <div class="tags"><span class="tag">Apps Script</span><span class="tag">QUERY / IMPORTRANGE</span><span class="tag">Tableau</span></div>
-        </div>
-        <div class="body">
-          <h3><span class="en">Manager dashboards and trackers</span><span class="uk">Дашборди й трекери для менеджерів</span></h3>
-          <p class="lede"><span class="en">Lightweight reporting in Google Sheets so managers see deadlines, scores and risks without asking.</span><span class="uk">Легка звітність у Google Sheets, щоб менеджери бачили дедлайни, бали та ризики без зайвих запитів.</span></p>
-          <div class="pbr">
-            <div>
-              <h4><span class="en">Problem</span><span class="uk">Проблема</span></h4>
-              <ul class="en"><li>Progress data spread across sheets and tools</li></ul>
-              <ul class="uk"><li>Дані про прогрес розкидані по таблицях та інструментах</li></ul>
-            </div>
-            <div>
-              <h4><span class="en">What I built</span><span class="uk">Що зробила</span></h4>
-              <ul class="en"><li>Manager dashboard on Apps Script: deadlines and simulation scores</li><li>Task and deadline trackers with colour-coded status and dated notes</li><li>Cross-sheet formulas (QUERY, IMPORTRANGE, MINIFS)</li><li>Validated Tableau dashboard figures against source data</li></ul>
-              <ul class="uk"><li>Дашборд менеджера на Apps Script: дедлайни та бали симуляцій</li><li>Трекери задач і дедлайнів з кольоровими статусами та датованими нотатками</li><li>Формули між таблицями (QUERY, IMPORTRANGE, MINIFS)</li><li>Валідація цифр у Tableau-дашбордах відносно джерела</li></ul>
-            </div>
-            <div>
-              <h4><span class="en">Result</span><span class="uk">Результат</span></h4>
-              <ul class="en"><li>One view of every cohort for managers</li><li>Scripts designed to coexist with colleagues' existing ones</li></ul>
-              <ul class="uk"><li>Одне вікно для менеджера по кожній когорті</li><li>Скрипти працюють разом з уже наявними скриптами колег без конфліктів</li></ul>
-            </div>
-          </div>
-        </div>
-      </article>
+</div>
+<div>
+<h4>What I built</h4>
+<ul><li>8+ interactive HTML courses: client communication, retention, engagement, empathy, audio consultations, platform workflows</li><li>Embedded video, tasks, quizzes and knowledge checks; completion events sent to the platform</li><li>Knowledge base of guides (glossary, schedule and payouts, "how we work")</li><li>Catalog restructure: one format, sequential unlocking, a separate learning journey for each audience</li></ul>
 
-    </div>
-  </section>
+</div>
+<div>
+<h4>Result</h4>
+<ul><li>35–45 new specialists per month trained during active hiring</li><li>On the new platform, onboarding ran faster and got better learner feedback</li><li>Same content in UA and EN with matching layouts</li></ul>
 
-  <!-- SKILLS -->
-  <section id="skills" class="print-break">
-    <div class="sec-head">
-      <h2><span class="en">Skills</span><span class="uk">Навички</span></h2>
-      <p><span class="en">What I do day to day and the tools I do it with.</span><span class="uk">Що роблю щодня і в яких інструментах.</span></p>
-    </div>
-    <div class="skills">
-      <div class="skill">
-        <h3>Learning &amp; Development</h3>
-        <div class="tags">
-          <span class="tag">Instructional Design</span><span class="tag">E-learning</span><span class="tag">Onboarding Programs</span><span class="tag">Learning Journeys</span><span class="tag">Knowledge Base</span><span class="tag">Quizzes &amp; Checks</span><span class="tag">Readiness Assessment</span><span class="tag">Scenario-based Training</span><span class="tag">Learner Surveys</span><span class="tag">LMS Admin</span><span class="tag">Video Editing</span>
-        </div>
-      </div>
-      <div class="skill">
-        <h3><span class="en">Operations &amp; Product</span><span class="uk">Операції та продукт</span></h3>
-        <div class="tags">
-          <span class="tag">Onboarding Ops</span><span class="tag">Hiring Pipeline</span><span class="tag">Process Automation</span><span class="tag">Tech Specs</span><span class="tag">Process Mapping</span><span class="tag">Clickable Prototypes</span><span class="tag">QA &amp; Bug Reporting</span><span class="tag">Cross-functional work</span>
-        </div>
-      </div>
-      <div class="skill">
-        <h3>AI &amp; Automation</h3>
-        <div class="tags">
-          <span class="tag">System prompts</span><span class="tag">AI personas</span><span class="tag">Evaluator prompts</span><span class="tag">Gemini API</span><span class="tag">Claude</span><span class="tag">ChatGPT</span><span class="tag">NotebookLM</span><span class="tag">Zapier</span><span class="tag">Google Apps Script</span>
-        </div>
-      </div>
-      <div class="skill">
-        <h3><span class="en">Tech, data &amp; tools</span><span class="uk">Технічне, дані та інструменти</span></h3>
-        <div class="tags">
-          <span class="tag">HTML/CSS/JS (AI-assisted)</span><span class="tag">Cloudflare Workers</span><span class="tag">Google Sheets</span><span class="tag">Tableau</span><span class="tag">Notion</span><span class="tag">Figma</span><span class="tag">Canva</span><span class="tag">Descript</span><span class="tag">Jira</span><span class="tag">TeamTailor</span><span class="tag">LearnUpon</span>
-        </div>
-      </div>
-    </div>
-  </section>
+</div>
+</div>
+</div>
+</article>
+<!-- 4 -->
+<article class="case">
+<div class="meta">
+<div class="num">04</div>
+<div class="area">Product · Specs</div>
+<div class="tags"><span class="tag">Notion</span><span class="tag">Figma</span><span class="tag">HTML prototypes</span><span class="tag">Jira</span></div>
+</div>
+<div class="body">
+<h3>New onboarding platform: specs and prototypes</h3>
+<p class="lede">Requirements, clickable prototypes and process design for the platform that replaced spreadsheet tracking and five separate tools.</p>
+<div class="pbr">
+<div>
+<h4>Problem</h4>
+<ul><li>Onboarding ran across LMS, Zapier, Slack, email and Tableau</li><li>Support questions lost in DMs; no single view of a newcomer</li><li>Every failed check needed a manual decision</li></ul>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="sec-head">
-      <h2><span class="en">Experience</span><span class="uk">Досвід</span></h2>
-      <p><span class="en">Three roles in 16 months at one product company: from user support to owning onboarding.</span><span class="uk">Три ролі за 16 місяців в одній продуктовій компанії: від підтримки користувачів до власного напряму онбордингу.</span></p>
-    </div>
-    <div class="tl">
-      <div class="tl-item">
-        <div class="tl-date"><span class="en">Aug 2026 – Nov 2026</span><span class="uk">серп. 2026 – лист. 2026</span></div>
-        <div><h3>Onboarding Operations Specialist</h3><div class="co"><span class="en">B2C tech product company · Remote</span><span class="uk">B2C продуктова IT-компанія · Remote</span></div>
-        <p><span class="en">End-to-end onboarding for Ukrainian- and English-speaking specialists, onboarding strategy and metrics, LMS administration, automations and platform specs.</span><span class="uk">Онбординг від початку до кінця для україномовних та англомовних спеціалістів, стратегія та метрики онбордингу, адміністрування LMS, автоматизації й ТЗ для платформи.</span></p></div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-date"><span class="en">Nov 2025 – Jul 2026</span><span class="uk">лист. 2025 – лип. 2026</span></div>
-        <div><h3>Education Specialist</h3><div class="co"><span class="en">B2C tech product company · Remote</span><span class="uk">B2C продуктова IT-компанія · Remote</span></div>
-        <p><span class="en">Interactive courses and guides, AI chat simulations, LMS migration, audio-consultation readiness checks, reporting tools.</span><span class="uk">Інтерактивні курси та гайди, AI-симуляції, міграція LMS, перевірка готовності до аудіоконсультацій, інструменти звітності.</span></p></div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-date"><span class="en">Jul 2025 – Oct 2025</span><span class="uk">лип. 2025 – жовт. 2025</span></div>
-        <div><h3>Supply Manager</h3><div class="co"><span class="en">B2C tech product company · Remote</span><span class="uk">B2C продуктова IT-компанія · Remote</span></div>
-        <p><span class="en">Live-chat consultations and support for platform users; first-hand knowledge of the specialist workflow.</span><span class="uk">Консультації та підтримка користувачів у live-чатах; знання робочого процесу спеціаліста зсередини.</span></p></div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-date">2020 – 2025</div>
-        <div><h3><span class="en">Customer service and team supervision</span><span class="uk">Клієнтський сервіс і керування командою</span></h3>
-        <p><span class="en">Store administrator at a bookstore chain (staff schedules, stock, customer support), quality control in book production in Germany, senior waiter and sales roles.</span><span class="uk">Адміністраторка книгарні (графіки персоналу, закупівлі, підтримка клієнтів), контроль якості на книжковому виробництві в Німеччині, старша офіціантка та продажі.</span></p></div>
-      </div>
-    </div>
-  </section>
+</div>
+<div>
+<h4>What I built</h4>
+<ul><li>Dev specs: operations and analytics dashboards (onboarding score, pass rate, time-to-activation, on-time rate, satisfaction)</li><li>Notification system and registration/login flow</li><li>Manual bug-reporting and escalation process for the onboarding stage</li><li>Clickable HTML prototypes and Figma process diagrams to align with developers</li><li>In-platform mentor inbox with automated reminders instead of Slack/email</li><li>Automated readiness-check rules</li></ul>
 
-  <!-- EDUCATION -->
-  <section id="education">
-    <div class="sec-head">
-      <h2><span class="en">Education</span><span class="uk">Освіта</span></h2>
-      <p></p>
-    </div>
-    <div class="two">
-      <div class="skill">
-        <h3><span class="en">Certifications &amp; training</span><span class="uk">Сертифікати та навчання</span></h3>
-        <ul>
-          <li>AI Fluency: Framework and Foundations — Anthropic, <span class="en">Nov</span><span class="uk">лист.</span> 2026</li>
-          <li>Programming with Generative AI — IIT Guwahati (Coursera), <span class="en">Nov</span><span class="uk">лист.</span> 2026</li>
-          <li><span class="en">Adult Learning Principles and L&amp;D Methods — corporate training</span><span class="uk">Принципи навчання дорослих і L&amp;D-методи — корпоративне навчання</span></li>
-        </ul>
-      </div>
-      <div class="skill">
-        <h3><span class="en">Degree &amp; languages</span><span class="uk">Диплом і мови</span></h3>
-        <ul>
-          <li><span class="en">Bachelor of Education — French, English and World Literature, Kherson State University, 2016–2020</span><span class="uk">Бакалавр освіти — французька, англійська мови та світова література, Херсонський державний університет, 2016–2020</span></li>
-          <li><span class="en">Ukrainian — native · English — B2</span><span class="uk">Українська — рідна · Англійська — B2</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
+</div>
+<div>
+<h4>Result</h4>
+<ul><li>5 tools consolidated into one platform</li><li>Only borderline cases go to manual review</li><li>Developers worked from prototypes, not guesses</li></ul>
+
+</div>
+</div>
+</div>
+</article>
+<!-- 5 -->
+<article class="case">
+<div class="meta">
+<div class="num">05</div>
+<div class="area">AI · Concept</div>
+<div class="tags"><span class="tag">LLM</span><span class="tag">Vision model</span><span class="tag">HTML prototype</span></div>
+</div>
+<div class="body">
+<h3>AI Copilot for profile review (concept)</h3>
+<p class="lede">An idea for an admin-panel assistant that checks new specialists' profiles against the creation guidelines. I prepared the concept and a clickable prototype; development didn't start for lack of time.</p>
+<div class="pbr">
+<div>
+<h4>Problem</h4>
+<ul><li>Profiles reviewed by hand against a long guide</li><li>Same issues flagged again and again</li></ul>
+
+</div>
+<div>
+<h4>What I proposed</h4>
+<ul><li>Concept: checks, data sources, manager workflow</li><li>Clickable prototype showing flagged fields and suggested fixes</li><li>Photo and video checks via a vision model</li></ul>
+
+</div>
+<div>
+<h4>Status</h4>
+<ul><li>Idea and prototype only; not implemented</li></ul>
+
+</div>
+</div>
+</div>
+</article>
+<!-- 6 -->
+<article class="case">
+<div class="meta">
+<div class="num">06</div>
+<div class="area">Data · Reporting</div>
+<div class="tags"><span class="tag">Apps Script</span><span class="tag">QUERY / IMPORTRANGE</span><span class="tag">Tableau</span></div>
+</div>
+<div class="body">
+<h3>Manager dashboards and trackers</h3>
+<p class="lede">Lightweight reporting in Google Sheets so managers see deadlines, scores and risks without asking.</p>
+<div class="pbr">
+<div>
+<h4>Problem</h4>
+<ul><li>Progress data spread across sheets and tools</li></ul>
+
+</div>
+<div>
+<h4>What I built</h4>
+<ul><li>Manager dashboard on Apps Script: deadlines and simulation scores</li><li>Task and deadline trackers with colour-coded status and dated notes</li><li>Cross-sheet formulas (QUERY, IMPORTRANGE, MINIFS)</li><li>Validated Tableau dashboard figures against source data</li></ul>
+
+</div>
+<div>
+<h4>Result</h4>
+<ul><li>One view of every cohort for managers</li><li>Scripts designed to coexist with colleagues' existing ones</li></ul>
+
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- SKILLS -->
+<section class="print-break" id="skills">
+<div class="sec-head">
+<h2>Skills</h2>
+<p>What I do day to day and the tools I do it with.</p>
+</div>
+<div class="skills">
+<div class="skill">
+<h3>Learning &amp; Development</h3>
+<div class="tags">
+<span class="tag">Instructional Design</span><span class="tag">E-learning</span><span class="tag">Onboarding Programs</span><span class="tag">Learning Journeys</span><span class="tag">Knowledge Base</span><span class="tag">Quizzes &amp; Checks</span><span class="tag">Readiness Assessment</span><span class="tag">Scenario-based Training</span><span class="tag">Learner Surveys</span><span class="tag">LMS Admin</span><span class="tag">Video Editing</span>
+</div>
+</div>
+<div class="skill">
+<h3>Operations &amp; Product</h3>
+<div class="tags">
+<span class="tag">Onboarding Ops</span><span class="tag">Hiring Pipeline</span><span class="tag">Process Automation</span><span class="tag">Tech Specs</span><span class="tag">Process Mapping</span><span class="tag">Clickable Prototypes</span><span class="tag">QA &amp; Bug Reporting</span><span class="tag">Cross-functional work</span>
+</div>
+</div>
+<div class="skill">
+<h3>AI &amp; Automation</h3>
+<div class="tags">
+<span class="tag">System prompts</span><span class="tag">AI personas</span><span class="tag">Evaluator prompts</span><span class="tag">Gemini API</span><span class="tag">Claude</span><span class="tag">ChatGPT</span><span class="tag">NotebookLM</span><span class="tag">Zapier</span><span class="tag">Google Apps Script</span>
+</div>
+</div>
+<div class="skill">
+<h3>Tech, data &amp; tools</h3>
+<div class="tags">
+<span class="tag">HTML/CSS/JS (AI-assisted)</span><span class="tag">Cloudflare Workers</span><span class="tag">Google Sheets</span><span class="tag">Tableau</span><span class="tag">Notion</span><span class="tag">Figma</span><span class="tag">Canva</span><span class="tag">Descript</span><span class="tag">Jira</span><span class="tag">TeamTailor</span><span class="tag">LearnUpon</span>
+</div>
+</div>
+</div>
+</section>
+<!-- EXPERIENCE -->
+<section id="experience">
+<div class="sec-head">
+<h2>Experience</h2>
+<p>Three roles in 16 months at one product company: from user support to owning onboarding.</p>
+</div>
+<div class="tl">
+<div class="tl-item">
+<div class="tl-date">Aug 2026 – Nov 2026</div>
+<div><h3>Onboarding Operations Specialist</h3><div class="co">B2C tech product company · Remote</div>
+<p>End-to-end onboarding for Ukrainian- and English-speaking specialists, onboarding strategy and metrics, LMS administration, automations and platform specs.</p></div>
+</div>
+<div class="tl-item">
+<div class="tl-date">Nov 2025 – Jul 2026</div>
+<div><h3>Education Specialist</h3><div class="co">B2C tech product company · Remote</div>
+<p>Interactive courses and guides, AI chat simulations, LMS migration, audio-consultation readiness checks, reporting tools.</p></div>
+</div>
+<div class="tl-item">
+<div class="tl-date">Jul 2025 – Oct 2025</div>
+<div><h3>Supply Manager</h3><div class="co">B2C tech product company · Remote</div>
+<p>Live-chat consultations and support for platform users; first-hand knowledge of the specialist workflow.</p></div>
+</div>
+<div class="tl-item">
+<div class="tl-date">2020 – 2025</div>
+<div><h3>Customer service and team supervision</h3>
+<p>Store administrator at a bookstore chain (staff schedules, stock, customer support), quality control in book production in Germany, senior waiter and sales roles.</p></div>
+</div>
+</div>
+</section>
+<!-- EDUCATION -->
+<section id="education">
+<div class="sec-head">
+<h2>Education</h2>
+
+</div>
+<div class="two">
+<div class="skill">
+<h3>Certifications &amp; training</h3>
+<ul>
+<li>AI Fluency: Framework and Foundations — Anthropic, Nov 2026</li>
+<li>Programming with Generative AI — IIT Guwahati (Coursera), Nov 2026</li>
+<li>Adult Learning Principles and L&amp;D Methods — corporate training</li>
+</ul>
+</div>
+<div class="skill">
+<h3>Degree &amp; languages</h3>
+<ul>
+<li>Bachelor of Education — French, English and World Literature, Kherson State University, 2016–2020</li>
+<li>Ukrainian — native · English — B2</li>
+</ul>
+</div>
+</div>
+</section>
 </main>
-
 <footer id="contact">
-  <div class="wrap"><div class="fbox">
-    <div>
-      <h2><span class="en">Let's build<br>your <span class="accent">onboarding</span></span><span class="uk">Збудуймо ваш<br><span class="accent">онбординг</span></span></h2>
-      <p class="note" style="margin-top:14px"><span class="en">Open to remote roles in onboarding, L&amp;D, training content and operations, in Ukraine and abroad. Available from December 2026.</span><span class="uk">Відкрита до віддалених ролей в онбордингу, L&amp;D, розробці навчальних матеріалів та операціях — в Україні й за кордоном. Можу стартувати з грудня 2026.</span></p>
-    </div>
-    <div class="contact">
-      <button class="btn primary" type="button" data-copy="rudenkovaalina98@gmail.com"><span class="en">Copy email</span><span class="uk">Скопіювати email</span></button>
-      <span><strong>rudenkovaalina98@gmail.com</strong></span>
-      <span class="copied" aria-live="polite"></span>
-    </div>
-  </div></div>
+<div class="wrap"><div class="fbox">
+<div>
+<h2>Let's build<br/>your <span class="accent">onboarding</span></h2>
+<p class="note" style="margin-top:14px">Open to remote roles in onboarding, L&amp;D, training content and operations, in Ukraine and abroad. Available from December 2026.</p>
+</div>
+<div class="contact">
+<button class="btn primary" data-copy="rudenkovaalina98@gmail.com" type="button">Copy email</button>
+<span><strong>rudenkovaalina98@gmail.com</strong></span>
+<span aria-live="polite" class="copied"></span>
+</div>
+</div></div>
 </footer>
-
 <script>
 (function(){
   var root=document.documentElement;
-  function setLang(l){
-    root.setAttribute('data-lang',l);
-    root.setAttribute('lang',l==='uk'?'uk':'en');
-    document.getElementById('btn-en').setAttribute('aria-pressed',l==='en');
-    document.getElementById('btn-uk').setAttribute('aria-pressed',l==='uk');
-    try{localStorage.setItem('pf-lang',l)}catch(e){}
-  }
-  window.setLang=setLang;
-  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set)})});
-  var start='en';
-  try{start=localStorage.getItem('pf-lang')||start}catch(e){}
-  if(location.hash==='#ua')start='uk';
-  if(location.hash==='#en')start='en';
-  setLang(start);
   var tbtn=document.getElementById('theme-btn');
   var mq=window.matchMedia?window.matchMedia('(prefers-color-scheme: dark)'):null;
   function isDark(){var t=root.getAttribute('data-theme');return t?t==='dark':!!(mq&&mq.matches)}
   function syncTheme(){var d=isDark();root.classList.toggle('is-dark',d);
-    var uk=root.getAttribute('data-lang')==='uk';
-    tbtn.setAttribute('aria-label',d?(uk?'Увімкнути світлу тему':'Switch to light theme'):(uk?'Увімкнути темну тему':'Switch to dark theme'));
-    tbtn.title=tbtn.getAttribute('aria-label')}
+    tbtn.setAttribute('aria-label',d?'Switch to light theme':'Switch to dark theme');tbtn.title=tbtn.getAttribute('aria-label')}
   function setTheme(t){root.setAttribute('data-theme',t);try{localStorage.setItem('pf-theme',t)}catch(e){}syncTheme()}
   try{var saved=localStorage.getItem('pf-theme');if(saved)root.setAttribute('data-theme',saved)}catch(e){}
   tbtn.addEventListener('click',function(){setTheme(isDark()?'light':'dark')});
   if(mq&&mq.addEventListener)mq.addEventListener('change',syncTheme);
-  new MutationObserver(syncTheme).observe(root,{attributes:true,attributeFilter:['data-theme','data-lang']});
+  new MutationObserver(syncTheme).observe(root,{attributes:true,attributeFilter:['data-theme']});
   syncTheme();
   document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){
-    var out=document.querySelector('.copied');var ok=root.dataset.lang==='uk'?'Email скопійовано':'Email copied';
-    var fail=root.dataset.lang==='uk'?'Не вдалося скопіювати — email вказано поруч':'Copy failed — the address is shown here';
-    try{navigator.clipboard.writeText(b.dataset.copy).then(function(){b.dataset.done='1';flash(b,ok)},function(){flash(b,fail)})}catch(e){flash(b,fail)}
+    try{navigator.clipboard.writeText(b.dataset.copy).then(function(){flash(b,'Email copied')},function(){flash(b,'Copy failed — the address is shown here')})}catch(e){flash(b,'Copy failed — the address is shown here')}
   })});
   function flash(b,msg){var lbl=b.innerHTML;b.textContent=msg;setTimeout(function(){b.innerHTML=lbl},1800)}
 })();
